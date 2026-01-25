@@ -6,4 +6,5 @@ function App({ children }) {
   return <RouterProvider router={router}>{children}</RouterProvider>;
 }
 
-export default App;
+export default App;  
+
