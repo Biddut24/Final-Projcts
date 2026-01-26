@@ -2,17 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-   
-   const menuItems = <>
-   <li><Link to="/">Home</Link></li>
-   <li><Link to="/about">About</Link></li>
-   <li><Link to="/service">Service</Link></li>
-   <li><Link to="/contact">Contact</Link></li>
-   </>
+  const menuItems = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/about">About</Link>
+      </li>
+      <li>
+        <Link to="/service">Service</Link>
+      </li>
+      <li>
+        <Link to="/contact">Contact</Link>
+      </li>
+    </>
+  );
 
   return (
     <div>
-      <div className="navbar shadow-sm justify-between bg-primary text-white px-7">
+      <div className="navbar  justify-between bg-primary text-white px-7">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,7 +48,9 @@ const Header = () => {
               {menuItems}
             </ul>
           </div>
-          <Link to="/" className="text-2xl font-bold"><spn className="text-secondary">Medi</spn>site</Link>
+          <Link to="/" className="text-2xl font-bold">
+            <spn className="text-secondary">Medi</spn>site
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal font-semibold px-1">

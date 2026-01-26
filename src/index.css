@@ -1,4 +1,8 @@
+.desing {
+  clip-path: polygon(0 0, 100% 0%, 100% 69%, 0 100%);
+}
+
 :root {
-    --color-primary: #34C9B6;
-    --color-secondary: #C7F2FF;
+  --color-primary: #34c9b6;
+  --color-secondary: #c7f2ff;
 }
