@@ -1,8 +1,16 @@
-.desing {
-  clip-path: polygon(0 0, 100% 0%, 100% 69%, 0 100%);
-}
-
 :root {
   --color-primary: #34c9b6;
   --color-secondary: #c7f2ff;
+}
+.cardInfo {
+  transition: all 0.3s linear;
+}
+.cardCircle {
+  transition: all 0.3s linear;
+}
+.cardInfo:hover {
+  background-color: var(--color-secondary);
+}
+.cardInfo:hover .cardCircle {
+  background-color: white;
 }
