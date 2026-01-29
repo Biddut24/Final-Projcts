@@ -1,6 +1,7 @@
 :root {
   --color-primary: #34c9b6;
   --color-secondary: #c7f2ff;
+  --color-neutral: #757373;
 }
 .cardInfo {
   transition: all 0.3s linear;

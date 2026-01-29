@@ -33,7 +33,7 @@ const Banner = () => {
           </div>
 
           {/* ===== mobile shape ====== */}
-          <div className="w-1/1 md:2/4 flex justify-center md:justify-end items-center relative">
+          <div className="mt-9 md:mt-0 w-1/1 md:2/4 flex justify-center md:justify-end items-center relative">
             <img className="" src={mobileShape} />
             <div className="absolute top-15 w-[232px]  md:right-7 space-y-10">
               <img src={doctor} alt="best medical, best doctors" />
