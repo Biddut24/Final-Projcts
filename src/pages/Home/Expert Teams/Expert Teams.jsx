@@ -6,6 +6,7 @@ import doctor3 from "../../../assets/images/pic3.png";
 import doctor4 from "../../../assets/images/pic4.png";
 import Expert from "./Expert";
 
+
 const ExpertTeams = () => {
   const expertTeams = [
     {
@@ -45,5 +46,4 @@ const ExpertTeams = () => {
     </div>
   );
 };
-
 export default ExpertTeams;
