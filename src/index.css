@@ -15,3 +15,9 @@
 .cardInfo:hover .cardCircle {
   background-color: white;
 }
+
+
+.footer-shape{
+ clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 38%);
+
+}
