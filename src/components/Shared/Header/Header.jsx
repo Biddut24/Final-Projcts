@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../context/UserContext";
 
 const Header = () => {
+
+  // const {name} = useContext(AuthContext)
+
   const menuItems = (
     <>
       <li>
@@ -20,6 +24,7 @@ const Header = () => {
       <li>
         <Link to="/Sign-up">Register</Link>
       </li>
+      
     </>
   );
 
