@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../context/UserContext";
+import Loading from "../Loading";
 
 const Header = () => {
-
-  // const {name} = useContext(AuthContext)
+  const { user, userLoading,logOut } = useContext(AuthContext);
+  if( userLoading) {
+    return <Loading/>
+  }
 
   const menuItems = (
     <>
@@ -21,10 +24,14 @@ const Header = () => {
       <li>
         <Link to="/contact">Contact</Link>
       </li>
-      <li>
-        <Link to="/Sign-up">Register</Link>
-      </li>
-      
+      {
+        user?.email ?<li><button onClick={logOut }>Sing Out</button></li>:
+        
+       <li> <Link to="/Sign-up">Register</Link> </li>
+      }
+      {
+      user?.email && <li> <Link to="/dashbord">Dashboard</Link></li>
+      }
     </>
   );
 
